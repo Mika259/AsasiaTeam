@@ -21,13 +21,13 @@ async function getServerStatus() {
       players.innerHTML = `Players : ${data.players.online}/${data.players.max}`;
       motd.innerHTML = data.motd.html
 
-      if (data.version.name_clean){
-        stat.innerHTML = 'Online';
-      stat.style.color = 'lime';
-      }
-      else{
+      if ("/Offline/".test(data.version.name_clean)){
         stat.innerHTML = 'Offline';
       stat.style.color = 'red';
+      }
+      else{
+        stat.innerHTML = 'Online';
+      stat.style.color = 'lime';
       }
       
     } else {
