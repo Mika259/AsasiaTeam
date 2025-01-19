@@ -21,7 +21,7 @@ async function getServerStatus() {
       players.innerHTML = `Players : ${data.players.online}/${data.players.max}`;
       motd.innerHTML = data.motd.html
 
-      if (data.online){
+      if (data.version.name_clean){
         stat.innerHTML = 'Online';
       stat.style.color = 'lime';
       }
