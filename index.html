@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Asasia SMP</title>
   <meta property="og:image" content="server_logo.jpg">
-<meta property="og:image:alt" content="Asasia SMP season 3">
+  <meta property="og:image:alt" content="Asasia SMP season 3">
   <link rel="icon" href="server_logo.jpg">
   <meta name="description" content="Asasia SMP Server Status">
   <meta name="keywords" content="Minecraft, server, smp, aternos">
@@ -18,25 +18,33 @@
     }
     .img-thumbnail {
       margin-bottom: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+    .marquee {
+      font-size: 14px; /* Adjust font size */
+    }
+    @media (max-width: 576px) {
+      .text-warning-emphasis {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 <body>
-<marquee class="text-light text-bg-secondary">SMP Survival - Crossplay java dan bedrock/mcpe - Support minecraft version 1.8 hingga 1.21.4</marquee>
-<div class="text-center bg-dark p-3">
-  <img src="server_logo.jpg" class="img-thumbnail" width="150px"><br>
-  <h1 id="stat">pending</h1>
-  <h1 class="badge text-bg-secondary fs-1">Asasia SMP <font color="orange">season 3</font></h1>
-  <h2 id="players" class="text-warning-emphasis">loading</h2>
-  <h2 id="host" class="text-warning-emphasis">loading</h2>
-  <h2 id="port" class="text-warning-emphasis">loading</h2>
-  <h2 id="ver" class="text-warning-emphasis">loading</h2>
-  <p id="motd" class="text-warning-emphasis">loading</p>
-<br><br>
-  
-</div>
+  <marquee class="text-light text-bg-secondary marquee">SMP Survival - Crossplay java dan bedrock/mcpe - Support minecraft version 1.8 hingga 1.21.4</marquee>
+  <div class="text-center bg-dark p-3">
+    <img src="server_logo.jpg" class="img-thumbnail" alt="Server Logo">
+    <h1 id="stat">pending</h1>
+    <h1 class="badge text-bg-secondary fs-1">Asasia SMP <span style="color: orange;">season 3</span></h1>
+    <h2 id="players" class="text-warning-emphasis">loading</h2>
+    <h2 id="host" class="text-warning-emphasis">loading</h2>
+    <h2 id="port" class="text-warning-emphasis">loading</h2>
+    <h2 id="ver" class="text-warning-emphasis">loading</h2>
+    <p id="motd" class="text-warning-emphasis">loading</p>
+  </div>
 
-<script src="script.js">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
