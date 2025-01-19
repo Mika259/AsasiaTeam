@@ -20,8 +20,8 @@ async function getServerStatus() {
       ver.innerHTML = data.version.name_html
       players.innerHTML = `Players : ${data.players.online}/${data.players.max}`;
       motd.innerHTML = data.motd.html
-      let str = "/●\sOffline/"
-      if (str.test(data.version.name_clean)){
+      let str = "/offline/"
+      if (str.test(data.motd.clean)){
         stat.innerHTML = 'Offline';
       stat.style.color = 'red';
       }
