@@ -36,7 +36,7 @@ async function getServerStatus() {
     }
   } catch (error) {
     console.error('Error fetching data:', error);
-    stat.innerHTML = 'Kesalahan semasa mengambil data';
+    stat.innerHTML = 'eOffline';
     stat.style.color = 'red';
   }
 }
